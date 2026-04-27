@@ -5,7 +5,7 @@ plugins {
     // Add the dependency for the Google services Gradle plugin
     id("com.google.gms.google-services") version "4.4.2" apply false
     //Hilt
-    id("com.google.dagger.hilt.android") version "2.51.1" apply false
+    id("com.google.dagger.hilt.android") version "2.55" apply false
     //Navigation
     id("androidx.navigation.safeargs.kotlin") version "2.7.7" apply false
 }
