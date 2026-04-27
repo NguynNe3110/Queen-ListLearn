@@ -62,7 +62,7 @@ dependencies {
     configurations.all {
         resolutionStrategy.eachDependency {
             if (requested.group == "org.jetbrains.kotlinx" && requested.name == "kotlinx-metadata-jvm") {
-                useVersion("0.9.0")
+                useVersion("0.11.0")
             }
         }
     }
@@ -77,8 +77,8 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
 
     //Hilt
-    implementation("com.google.dagger:hilt-android:2.51.1")
-    kapt("com.google.dagger:hilt-android-compiler:2.51.1")
+    implementation("com.google.dagger:hilt-android:2.55")
+    kapt("com.google.dagger:hilt-android-compiler:2.55")
 
     //dùng .await()
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.9.0")
