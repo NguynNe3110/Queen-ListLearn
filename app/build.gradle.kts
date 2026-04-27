@@ -13,7 +13,7 @@ plugins {
 
 android {
     namespace = "com.uzuu.learn1_firebase"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.uzuu.learn1_firebase"
