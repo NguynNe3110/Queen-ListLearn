@@ -13,12 +13,12 @@ plugins {
 
 android {
     namespace = "com.uzuu.learn1_firebase"
-    compileSdk = 36
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.uzuu.learn1_firebase"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -35,12 +35,12 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
         compilerOptions {
-            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11)
+            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
         }
     }
     buildFeatures {
@@ -60,7 +60,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     // Import the Firebase BoM
-    implementation(platform("com.google.firebase:firebase-bom:34.12.0"))
+    implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
 
     // Firebase Auth (không cần version, không cần -ktx)
     implementation("com.google.firebase:firebase-auth")
@@ -68,16 +68,12 @@ dependencies {
     // Firebase Analytics (tuỳ chọn, nhưng nên có)
     implementation("com.google.firebase:firebase-analytics")
 
-    // Google Sign-In (CHỈ cần nếu bạn dùng "Sign in with Google")
-    // Không cần cho Email/Password auth
-    // implementation("com.google.android.gms:play-services-auth:21.2.0")
-
     //Hilt
-    implementation("com.google.dagger:hilt-android:2.59.2")
-    kapt("com.google.dagger:hilt-android-compiler:2.59.2")
+    implementation("com.google.dagger:hilt-android:2.51.1")
+    kapt("com.google.dagger:hilt-android-compiler:2.51.1")
 
     //dùng .await()
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.8.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.9.0")
 
     // ViewModel + viewModelScope
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7")
@@ -88,8 +84,8 @@ dependencies {
     // Activity KTX ,Kotlin extension: by viewModels()
     implementation("androidx.activity:activity-ktx:1.9.3")
     // Navigation (Fragment-based)
-    implementation("androidx.navigation:navigation-fragment-ktx:2.8.7")
-    implementation("androidx.navigation:navigation-ui-ktx:2.8.7")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.8.4")
+    implementation("androidx.navigation:navigation-ui-ktx:2.8.4")
     // Material Design (cho TextInputLayout, Button chuẩn)
     implementation("com.google.android.material:material:1.12.0")
 }
