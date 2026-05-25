@@ -22,8 +22,8 @@
         </activity>
 
         <!-- Các bài học: KHÔNG có intent-filter LAUNCHER -->
-        <activity
-            android:name="com.uzuu.jetpack_compose_hub.feature.learn1_coreAndLayout.Learn1Activity" />
+        <activity android:name=".feature.learn1_coreAndLayout.Learn1Activity" />
+        <activity android:name=".feature.learn2_widgetAndModifier.Learn2Activity"/>
     </application>
 
 </manifest>
