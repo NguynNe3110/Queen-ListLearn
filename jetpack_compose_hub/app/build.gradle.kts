@@ -46,6 +46,7 @@ android {
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.foundation.layout)
     implementation(libs.material)
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.constraintlayout)
@@ -85,6 +86,9 @@ dependencies {
 
     // HILT cho Compose (Dùng khi inject ViewModel vào @Composable)
     implementation(libs.hilt.navigation.compose)
+
+    //AsyncImage (Coil)
+    implementation("io.coil-kt:coil-compose:2.7.0")
 }
 
 // Bắt buộc phải có để kapt sinh code đúng chuẩn Kotlin

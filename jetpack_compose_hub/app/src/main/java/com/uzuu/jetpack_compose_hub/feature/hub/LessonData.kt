@@ -15,7 +15,7 @@ object LessonData {
 
         Lesson(
             "Bài 2: Widget & modifier",
-            "thêm sau",
+            "TextField[OutlinedTextField], Button[Icon, FilledTonalButton], Image[Asycn]",
             Learn2Activity::class.java
         )
     )
