@@ -75,6 +75,8 @@ dependencies {
     // Firebase Auth (không cần version, không cần -ktx)
     implementation("com.google.firebase:firebase-auth")
 
+    //firestore
+    implementation("com.google.firebase:firebase-firestore")
     // Firebase Analytics (tuỳ chọn, nhưng nên có)
     implementation("com.google.firebase:firebase-analytics")
 

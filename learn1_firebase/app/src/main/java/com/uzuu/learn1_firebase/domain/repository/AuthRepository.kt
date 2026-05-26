@@ -1,9 +1,11 @@
 package com.uzuu.learn1_firebase.domain.repository
 
-interface AuthRepository {
-    suspend fun login(email: String, password: String) :String?
+import com.uzuu.learn1_firebase.core.result.ApiResult
 
-    suspend fun register(email: String, password: String): String?
+interface AuthRepository {
+    suspend fun login(email: String, password: String) :ApiResult<Unit>
+
+    suspend fun register(email: String, password: String): ApiResult<Unit>
 
     fun logout()
 }

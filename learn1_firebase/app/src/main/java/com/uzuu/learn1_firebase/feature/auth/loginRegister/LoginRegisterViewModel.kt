@@ -2,6 +2,7 @@ package com.uzuu.learn1_firebase.feature.auth.loginRegister
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.uzuu.learn1_firebase.core.result.ApiResult
 import com.uzuu.learn1_firebase.domain.repository.AuthRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
@@ -42,20 +43,16 @@ class LoginRegisterViewModel @Inject constructor(
         viewModelScope.launch {
             _uiState.update { it.copy(isLoading = true, error = null) }
 
-            try {
-                authRepo.login(email, password)
-                _uiState.update { it.copy(isLoading = false) }
-                _uiEventChannel.send(LoginUiEvent.NavigateToHome)
-                _uiEvent.tryEmit(LoginUiEvent.Toast("Đăng nhập thành công"))
-            } catch (e: Exception) {
-                //firebase trả lỗi, cần map ra
-                val msg = when {
-                    e.message?.contains("password") == true -> "Mật khẩu không đúng"
-                    e.message?.contains("email") == true -> "Email chưa đăng kí"
-                    else -> "Đăng nhập thất bại"
+            when (val result = authRepo.login(email, password)) {
+
+                is ApiResult.Success -> {
+                    _uiState.update { it.copy(isLoading = false) }
+                    _uiEventChannel.send(LoginUiEvent.NavigateToHome)
+                    _uiEvent.tryEmit(LoginUiEvent.Toast("Đăng nhập thành công"))
                 }
-                _uiState.update { it.copy(isLoading = false, error = msg) }
-                _uiEvent.tryEmit(LoginUiEvent.Toast("Đăng nhập thất bại"))
+                is ApiResult.Error -> {
+                    _uiState.update { it.copy(isLoading = false, error = result.message) }
+                }
             }
         }
     }

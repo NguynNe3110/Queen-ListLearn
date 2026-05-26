@@ -26,12 +26,6 @@ class LoginFragment : Fragment(){
 
     private val viewModel: LoginRegisterViewModel by viewModels()
 
-
-//    private val viewModel : xxx by viewModels {
-//        val repo = (requireActivity() as MainActivity).container.yyy
-//        zzz(repo)
-//    }
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
