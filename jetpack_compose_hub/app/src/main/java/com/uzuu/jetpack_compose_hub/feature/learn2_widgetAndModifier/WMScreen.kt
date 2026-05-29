@@ -157,9 +157,8 @@ fun Lesson2Screen() {
             }
 
             ImageAsyncImage()
-            Icon()
-            Modifier()
-
+            // màn thứ 2
+            second()
         }
     }
 }
@@ -171,7 +170,7 @@ fun PreviewScreen() {
 }
 
 fun ToastFun (context: Context, message: String) {
-    Toast.makeText(context, "FAB action", Toast.LENGTH_SHORT).show()
+    Toast.makeText(context, "$message", Toast.LENGTH_SHORT).show()
 }
 
 @Composable
@@ -422,6 +421,7 @@ fun second() {
     ) {
         Icon()
         Modifier()
+        click()
     }
 }
 @Composable
@@ -489,7 +489,6 @@ fun Modifier() {
             Text("Text fillmaxsize = occupid full screen")
 //                modifier = Modifier.background(Color.Red)
 //                    .fillMaxSize()) //Chiếm toàn màn hình.
-            click()
         }
     }
 }
@@ -505,7 +504,7 @@ fun click() {
     ) {
         Row(
             horizontalArrangement = Arrangement.spacedBy(12.dp),
-
+            modifier = Modifier.padding(16.dp)
         ) {
             Text("Text", modifier = Modifier.clickable{
                 ToastFun(ct, "Text click modifier")
