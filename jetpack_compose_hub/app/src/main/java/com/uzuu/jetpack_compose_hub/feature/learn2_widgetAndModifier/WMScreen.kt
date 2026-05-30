@@ -58,8 +58,11 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.focus.focusModifier
+import androidx.compose.ui.graphics.ColorFilter
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.unit.Dp
 import coil.compose.AsyncImage
 import com.uzuu.jetpack_compose_hub.R
@@ -529,6 +532,19 @@ fun click() {
 //                    onClickLabel = { }, cho trình đọc màn hình
 //                    onLongClickLabel = { }  cho trình đọc màn hình
                 )
+            )
+            Image(
+                painter = painterResource(id = R.drawable.home),
+                contentDescription = null,colorFilter = ColorFilter.tint(Color.Red),
+                modifier = Modifier.height(24.dp)
+
+            ) // Đổi sang màu đỏ)
+
+            Icon(
+                imageVector = ImageVector.vectorResource(id = R.drawable.home), // Lưu ý: vectorResource thay vì painterResource nếu dùng Icon
+                contentDescription = null,
+                tint = Color.Blue, // Đổi sang màu xanh dương,,
+                modifier = Modifier.height(24.dp)
             )
         }
     }
