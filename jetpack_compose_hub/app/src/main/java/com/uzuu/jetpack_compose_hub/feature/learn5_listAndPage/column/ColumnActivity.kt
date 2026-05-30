@@ -10,7 +10,9 @@ import androidx.compose.ui.Modifier
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.uzuu.jetpack_compose_hub.feature.learn2_widgetAndModifier.Lesson2Screen
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ColumnActivity: ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

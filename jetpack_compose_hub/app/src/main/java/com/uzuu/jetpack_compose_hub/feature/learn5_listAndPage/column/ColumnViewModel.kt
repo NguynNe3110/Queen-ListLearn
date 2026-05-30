@@ -17,30 +17,21 @@ class ColumnViewModel @Inject constructor() : ViewModel() {
     private val _uiState = MutableStateFlow<ColumnUiState>(ColumnUiState.Loading)
     val uiState: StateFlow<ColumnUiState> = _uiState.asStateFlow()
 
-    init {
-        loadData()
-    }
+    init { loadData() }
 
     private fun loadData() {
         viewModelScope.launch {
             delay(1000)
-            val fakeItems = (1..50).map { index->
+
+            // Tạo dữ liệu giả
+            val allItems = (1..50).map { index ->
                 ColumnItem(
                     id = index,
-                    title = "San pham #$index",
-                    description = "Mo ta ngan gon cho san pham so $index"
+                    title = "Sản phẩm #$index",
+                    description = "Mô tả sản phẩm $index"
                 )
             }
-            for (item in fakeItems){
-                if(item.id % 2 == 0) {
-                    _uiState.update {
-
-                    }
-                } else {
-
-                }
-            }
-
+            _uiState.value = ColumnUiState.Success(allItems)
         }
     }
 }
