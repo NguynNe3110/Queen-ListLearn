@@ -5,6 +5,7 @@ import com.uzuu.jetpack_compose_hub.feature.learn2_widgetAndModifier.Learn2Activ
 import com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.feature.columnChat.ColumnActivityC
 import com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.feature.columnQueen.ColumnActivityQ
 import com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.feature.rowChat.RowCActivity
+import com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.feature.rowQueen.RowQActivity
 
 object LessonData {
     // Danh sách các bài học - THÊM BÀI MỚI VÀO ĐÂY
@@ -22,15 +23,21 @@ object LessonData {
         ),
 
         Lesson(
-            "Bài 5.2: LazyRow Chat",
+            "Bài 5.2.1: LazyRow Queen",
+            "TextField[OutlinedTextField], Button[Icon, FilledTonalButton], Image[Asycn]",
+            RowQActivity::class.java
+        ),
+
+        Lesson(
+            "Bài 5.2.2: LazyRow Chat",
             "TextField[OutlinedTextField], Button[Icon, FilledTonalButton], Image[Asycn]",
             RowCActivity::class.java
         ),
+
         Lesson(
             "Bài 5.3: Column",
         "TextField[OutlinedTextField], Button[Icon, FilledTonalButton], Image[Asycn]",
             Learn2Activity::class.java
-
-    )
+        ),
     )
 }

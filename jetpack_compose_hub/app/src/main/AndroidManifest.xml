@@ -30,6 +30,7 @@
         <activity android:name=".feature.learn5_listAndPage.feature.columnChat.ColumnActivityC" />
         <activity android:name=".feature.learn5_listAndPage.feature.columnQueen.ColumnActivityQ" />
         <activity android:name=".feature.learn5_listAndPage.feature.rowChat.RowCActivity"/>
+        <activity android:name=".feature.learn5_listAndPage.feature.rowQueen.RowQActivity"/>
 
     </application>
 
