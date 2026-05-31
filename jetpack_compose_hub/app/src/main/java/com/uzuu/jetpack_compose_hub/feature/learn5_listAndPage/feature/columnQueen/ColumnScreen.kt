@@ -1,6 +1,7 @@
-package com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.column
+package com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.feature.columnQueen
 
 import android.util.Log
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -104,7 +105,7 @@ private fun ItemErrorCard(item: ColumnItem) {
             .fillMaxWidth()
             .padding(vertical = 4.dp),
         colors = CardDefaults.cardColors(containerColor = Color.Red.copy(alpha = 0.1f)), // Nền đỏ nhạt
-        border = androidx.compose.foundation.BorderStroke(1.dp, Color.Red)
+        border = BorderStroke(1.dp, Color.Red)
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
             Text(

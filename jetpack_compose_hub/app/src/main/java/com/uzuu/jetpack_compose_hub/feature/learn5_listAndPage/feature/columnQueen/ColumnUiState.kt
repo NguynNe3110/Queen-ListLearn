@@ -1,4 +1,4 @@
-package com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.column
+package com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.feature.columnQueen
 
 sealed class ColumnUiState {
     object Loading : ColumnUiState()
