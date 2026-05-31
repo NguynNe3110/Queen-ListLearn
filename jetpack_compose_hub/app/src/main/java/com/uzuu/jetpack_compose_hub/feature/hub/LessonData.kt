@@ -3,7 +3,8 @@ package com.uzuu.jetpack_compose_hub.feature.hub
 import com.uzuu.jetpack_compose_hub.feature.hub.model.Lesson
 import com.uzuu.jetpack_compose_hub.feature.learn1_coreAndLayout.Learn1Activity
 import com.uzuu.jetpack_compose_hub.feature.learn2_widgetAndModifier.Learn2Activity
-import com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.column.ColumnActivity
+import com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.feature.columnQueen.ColumnActivityQ
+import com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.hub5.Hub5Activity
 
 object LessonData {
     // Danh sách các bài học - THÊM BÀI MỚI VÀO ĐÂY
@@ -20,9 +21,9 @@ object LessonData {
             Learn2Activity::class.java
         ),
         Lesson(
-            "Bài 5.1: Column",
-        "TextField[OutlinedTextField], Button[Icon, FilledTonalButton], Image[Asycn]",
-            ColumnActivity::class.java
+            "Bài 5: List & Page",
+        "Thêm sau",
+            Hub5Activity::class.java
     )
     )
 }
