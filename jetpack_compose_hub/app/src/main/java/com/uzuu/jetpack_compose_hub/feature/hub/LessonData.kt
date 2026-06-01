@@ -1,9 +1,8 @@
 package com.uzuu.jetpack_compose_hub.feature.hub
 
 import com.uzuu.jetpack_compose_hub.feature.hub.model.Lesson
-import com.uzuu.jetpack_compose_hub.feature.learn1_coreAndLayout.Learn1Activity
-import com.uzuu.jetpack_compose_hub.feature.learn2_widgetAndModifier.Learn2Activity
-import com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.feature.columnQueen.ColumnActivityQ
+import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn1_coreAndLayout.Learn1Activity
+import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn2_widgetAndModifier.Learn2Activity
 import com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.hub5.Hub5Activity
 import com.uzuu.jetpack_compose_hub.feature.learn6_navigation.Learn6Activity
 import com.uzuu.jetpack_compose_hub.feature.ztest.navigationQ315.navigationQueen315

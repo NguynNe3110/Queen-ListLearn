@@ -24,8 +24,8 @@
         </activity>
 
         <!-- Các bài học: KHÔNG có intent-filter LAUNCHER -->
-        <activity android:name=".feature.learn1_coreAndLayout.Learn1Activity" />
-        <activity android:name=".feature.learn2_widgetAndModifier.Learn2Activity"/>
+        <activity android:name=".feature.listbaihoc.learn1_coreAndLayout.Learn1Activity" />
+        <activity android:name=".feature.listbaihoc.learn2_widgetAndModifier.Learn2Activity"/>
 
         <activity android:name=".feature.learn5_listAndPage.hub5.Hub5Activity" />
         <activity android:name=".feature.learn5_listAndPage.feature.columnChat.ColumnActivityC" />
@@ -35,6 +35,7 @@
         <activity android:name=".feature.ztest.navigationQ315.navigationQueen315"/>
 
         <activity android:name=".feature.learn6_navigation.Learn6Activity"/>
+
     </application>
 
 </manifest>

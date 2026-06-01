@@ -10,7 +10,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.uzuu.jetpack_compose_hub.feature.learn1_coreAndLayout.Learn1Activity
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

@@ -16,7 +16,11 @@ fun NavGraphBuilder.authGraph(navController: NavController) {
             },
             onLoginSuccess = {
                 navController.navigate(Screen.Main.route) {
-                    popUpTo(Screen.Login.route) { inclusive = true }
+                    popUpTo(
+                        Screen.Login.route
+                    ) {
+                        inclusive = true
+                    }
                 }
             }
         )
@@ -29,7 +33,9 @@ fun NavGraphBuilder.authGraph(navController: NavController) {
             },
             onRegisterSuccess = {
                 navController.navigate(Screen.Login.route) {
-                    popUpTo(Screen.Register.route) { inclusive = true }
+                    popUpTo(Screen.Register.route) {
+                        inclusive = true
+                    }
                 }
             }
         )
@@ -42,7 +48,9 @@ fun NavGraphBuilder.mainGraph(navController: NavController) {
         MainScreen(
             onLogout = {
                 navController.navigate(Screen.Login.route) {
-                    popUpTo(0) { inclusive = true }
+                    popUpTo(0) {
+                        inclusive = true
+                    }
                 }
             }
         )

@@ -1,7 +1,7 @@
 package com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.hub5
 
 import com.uzuu.jetpack_compose_hub.feature.hub.model.Lesson
-import com.uzuu.jetpack_compose_hub.feature.learn2_widgetAndModifier.Learn2Activity
+import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn2_widgetAndModifier.Learn2Activity
 import com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.feature.columnChat.ColumnActivityC
 import com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.feature.columnQueen.ColumnActivityQ
 import com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.feature.rowChat.RowCActivity

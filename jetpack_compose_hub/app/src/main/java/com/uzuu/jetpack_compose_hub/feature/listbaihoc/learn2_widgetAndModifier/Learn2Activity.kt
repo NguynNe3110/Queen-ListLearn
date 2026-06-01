@@ -1,4 +1,4 @@
-package com.uzuu.jetpack_compose_hub.feature.learn2_widgetAndModifier
+package com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn2_widgetAndModifier
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
