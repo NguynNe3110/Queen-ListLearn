@@ -5,6 +5,7 @@ import com.uzuu.jetpack_compose_hub.feature.learn1_coreAndLayout.Learn1Activity
 import com.uzuu.jetpack_compose_hub.feature.learn2_widgetAndModifier.Learn2Activity
 import com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.feature.columnQueen.ColumnActivityQ
 import com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.hub5.Hub5Activity
+import com.uzuu.jetpack_compose_hub.feature.ztest.navigationQ315.navigationQueen315
 
 object LessonData {
     // Danh sách các bài học - THÊM BÀI MỚI VÀO ĐÂY
@@ -24,6 +25,12 @@ object LessonData {
             "Bài 5: List & Page",
         "Thêm sau",
             Hub5Activity::class.java
-    )
+        ),
+
+        Lesson(
+            "tesst",
+            "Thêm sau",
+            navigationQueen315::class.java
+        ),
     )
 }
