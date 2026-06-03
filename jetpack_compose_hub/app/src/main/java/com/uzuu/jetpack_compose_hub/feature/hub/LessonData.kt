@@ -5,7 +5,7 @@ import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn1_coreAndLayout.Lear
 import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn2_widgetAndModifier.Learn2Activity
 import com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.hub5.Hub5Activity
 import com.uzuu.jetpack_compose_hub.feature.learn6_navigation.Learn6Activity
-import com.uzuu.jetpack_compose_hub.feature.ztest.navigationQ315.navigationQueen315
+import com.uzuu.jetpack_compose_hub.feature.ztest.bottom_navigationQ315.navigationQueen315
 
 object LessonData {
     // Danh sách các bài học - THÊM BÀI MỚI VÀO ĐÂY

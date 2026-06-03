@@ -32,10 +32,10 @@
         <activity android:name=".feature.learn5_listAndPage.feature.columnQueen.ColumnActivityQ" />
         <activity android:name=".feature.learn5_listAndPage.feature.rowChat.RowCActivity"/>
         <activity android:name=".feature.learn5_listAndPage.feature.rowQueen.RowQActivity"/>
-        <activity android:name=".feature.ztest.navigationQ315.navigationQueen315"/>
+        <activity android:name=".feature.ztest.bottom_navigationQ315.navigationQueen315"/>
 
         <activity android:name=".feature.learn6_navigation.Learn6Activity"/>
-
+        <activity android:name=".feature.ztest.navigationMVVM.NavigationMVVMActivity"/>
     </application>
 
 </manifest>

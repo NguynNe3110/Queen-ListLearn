@@ -6,6 +6,7 @@ import com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.feature.columnCha
 import com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.feature.columnQueen.ColumnActivityQ
 import com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.feature.rowChat.RowCActivity
 import com.uzuu.jetpack_compose_hub.feature.learn5_listAndPage.feature.rowQueen.RowQActivity
+import com.uzuu.jetpack_compose_hub.feature.ztest.navigationMVVM.NavigationMVVMActivity
 
 object LessonData {
     // Danh sách các bài học - THÊM BÀI MỚI VÀO ĐÂY
@@ -38,6 +39,12 @@ object LessonData {
             "Bài 5.3: Column",
         "TextField[OutlinedTextField], Button[Icon, FilledTonalButton], Image[Asycn]",
             Learn2Activity::class.java
+        ),
+
+        Lesson(
+            "Bài NavigationMVVMActivity",
+            "Thêm sau",
+            NavigationMVVMActivity::class.java
         ),
     )
 }
