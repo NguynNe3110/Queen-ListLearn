@@ -299,7 +299,8 @@ fun ButtonTextModifier(nameRed: String, nameGreen: String) {
                         ) {
                         Icon(
                             imageVector = Icons.Default.Favorite,
-                            contentDescription = null
+                            contentDescription = null,
+
                         )
                     }
                 }

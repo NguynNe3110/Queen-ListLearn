@@ -14,11 +14,6 @@ class LoginViewModel @Inject constructor(
 ) : ViewModel() {
 
     // 1. UiState CHỈ giữ trạng thái của màn hình (loading, error, data)
-    data class LoginUiState(
-        val isLoading: Boolean = false,
-        val errorMessage: String? = null
-    )
-
     private val _uiState = MutableStateFlow(LoginUiState())
     val uiState: StateFlow<LoginUiState> = _uiState
 

@@ -36,6 +36,9 @@
 
         <activity android:name=".feature.learn6_navigation.Learn6Activity"/>
         <activity android:name=".feature.ztest.navigationMVVM.NavigationMVVMActivity"/>
+
+        <activity android:name=".feature.ztest.TryAnimation"/>
+
     </application>
 
 </manifest>

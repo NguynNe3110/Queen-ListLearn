@@ -47,7 +47,8 @@ fun AppNavigation(
         // --- Màn hình Login ---
         composable(route = "login") {
             // Lấy ViewModel của màn hình Login (Hilt tự động inject)
-            val loginViewModel: LoginViewModel = hiltViewModel()
+
+            val loginViewModel: LoginViewModel = hiltViewModel() /////
 
             LoginScreen(
                 viewModel = loginViewModel,
