@@ -1,9 +1,11 @@
-package com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn5_listAndPage.hub5
+package com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn2_widgetAndModifier.manager
+
+import androidx.compose.foundation.lazy.items
+
 
 import android.content.Intent
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -12,12 +14,12 @@ import androidx.compose.ui.unit.dp
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HubScreen() {
+fun ztestScreen() {
     val context = LocalContext.current
 
     Scaffold(
         topBar = {
-            TopAppBar(title = { Text("🎓 Hub Học Android - Uzuu") })
+            TopAppBar(title = { Text("Folder test") })
         }
     ) { padding ->
         LazyColumn(
@@ -27,7 +29,7 @@ fun HubScreen() {
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-            items(LessonDataHub5.lessons) { lesson ->
+            items(LessonDatal2.lessonsl2) { lesson ->
                 Card(
                     onClick = {
                         // Bấm vào card → mở Activity của bài đó

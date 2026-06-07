@@ -48,7 +48,6 @@ fun RowQScreen(
             }
             .launchIn(this)
     }
-
     // 3. Render UI theo State
     Scaffold(
         topBar = {
