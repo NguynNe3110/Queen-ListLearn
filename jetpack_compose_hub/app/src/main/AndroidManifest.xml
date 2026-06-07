@@ -35,8 +35,10 @@
         <activity android:name=".feature.listbaihoc.learn5_listAndPage.feature.lazy_columnQueen.ColumnActivityQ" />
         <activity android:name=".feature.listbaihoc.learn5_listAndPage.feature.rowChat.RowCActivity"/>
         <activity android:name=".feature.listbaihoc.learn5_listAndPage.feature.rowQueen.RowQActivity"/>
-        <activity android:name=".feature.ztest.feature.bottom_navigationQ315.navigationQueen315"/>
+        <activity android:name=".feature.listbaihoc.learn5_listAndPage.feature.VerticalGridScreen"/>
 
+
+        <activity android:name=".feature.ztest.feature.bottom_navigationQ315.navigationQueen315"/>
         <activity android:name=".feature.listbaihoc.learn6_navigation.Learn6Activity"/>
         <activity android:name=".feature.ztest.feature.navigationMVVM.NavigationMVVMActivity"/>
 

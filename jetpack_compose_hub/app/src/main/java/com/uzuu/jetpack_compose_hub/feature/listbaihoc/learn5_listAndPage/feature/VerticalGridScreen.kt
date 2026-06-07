@@ -1,11 +1,15 @@
 package com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn5_listAndPage.feature
 
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -65,7 +69,7 @@ fun ColorGridItem(color: Color) {
             // fillMaxWidth() bắt nó chiếm hết không gian của "cột" mà nó đang đứng.
             .fillMaxWidth()
             // aspectRatio(1f): Bắt buộc ô này luôn là hình vuông (tỉ lệ 1:1)
-            .aspectRatio(1f)
+            .aspectRatio(1.5f)
             // Bo góc và tô màu nền
             .clip(RoundedCornerShape(12.dp))
             .background(color),
@@ -92,4 +96,16 @@ fun ColorGridItem(color: Color) {
 @Composable
 fun Pre() {
     ResponsiveColorGrid()
+}
+
+class VerticalGridScreen : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        setContent {
+            MaterialTheme {
+                ResponsiveColorGrid()
+            }
+        }
+    }
 }

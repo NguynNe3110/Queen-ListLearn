@@ -2,6 +2,7 @@ package com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn5_listAndPage.hub5
 
 import com.uzuu.jetpack_compose_hub.feature.hub.model.Lesson
 import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn2_widgetAndModifier.first.Learn2Activity
+import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn5_listAndPage.feature.VerticalGridScreen
 import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn5_listAndPage.feature.lazy_columnChat.ColumnActivityC
 import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn5_listAndPage.feature.lazy_columnQueen.ColumnActivityQ
 import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn5_listAndPage.feature.rowChat.RowCActivity
@@ -45,6 +46,12 @@ object LessonDataHub5 {
             "Bài NavigationMVVMActivity",
             "Thêm sau",
             NavigationMVVMActivity::class.java
+        ),
+
+        Lesson(
+            "Bài VerticalGridScreen",
+            "làm thử gridview vertical",
+            VerticalGridScreen::class.java
         ),
     )
 }
