@@ -3,9 +3,9 @@ package com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn6_navigation.ui.nav
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
-import com.uzuu.jetpack_compose_hub.feature.learn6_navigation.feature.auth.login.LoginScreen
-import com.uzuu.jetpack_compose_hub.feature.learn6_navigation.feature.auth.register.RegisterScreen
-import com.uzuu.jetpack_compose_hub.feature.learn6_navigation.feature.main.MainScreen
+import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn6_navigation.feature.auth.login.LoginScreen
+import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn6_navigation.feature.auth.register.RegisterScreen
+import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn6_navigation.feature.main.MainScreen
 
 // Auth Graph
 fun NavGraphBuilder.authGraph(navController: NavController) {

@@ -4,7 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.uzuu.jetpack_compose_hub.feature.learn6_navigation.feature.splash.SplashScreen
+import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn6_navigation.feature.splash.SplashScreen
 
 @Composable
 fun AppNavHost(

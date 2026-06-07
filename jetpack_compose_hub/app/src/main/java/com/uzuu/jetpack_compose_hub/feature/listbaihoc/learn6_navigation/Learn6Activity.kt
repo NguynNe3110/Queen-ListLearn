@@ -8,7 +8,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
-import com.uzuu.jetpack_compose_hub.feature.learn6_navigation.ui.navigation.AppNavHost
+import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn6_navigation.ui.navigation.AppNavHost
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

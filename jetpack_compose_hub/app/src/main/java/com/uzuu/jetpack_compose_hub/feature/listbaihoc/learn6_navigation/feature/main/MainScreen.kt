@@ -17,10 +17,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.uzuu.jetpack_compose_hub.feature.learn6_navigation.feature.main.home.HomeScreen
-import com.uzuu.jetpack_compose_hub.feature.learn6_navigation.feature.main.profile.ProfileScreen
-import com.uzuu.jetpack_compose_hub.feature.learn6_navigation.feature.main.setting.SettingScreen
-import com.uzuu.jetpack_compose_hub.feature.learn6_navigation.ui.navigation.Screen
+import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn6_navigation.feature.main.home.HomeScreen
+import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn6_navigation.feature.main.profile.ProfileScreen
+import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn6_navigation.feature.main.setting.SettingScreen
+import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn6_navigation.ui.navigation.Screen
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

@@ -12,7 +12,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navOptions
-import com.uzuu.jetpack_compose_hub.feature.learn6_navigation.feature.main.home.HomeScreen
+import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn6_navigation.feature.main.home.HomeScreen
 import dagger.hilt.android.AndroidEntryPoint
 
 // 1. @AndroidEntryPoint để Hilt có thể inject dependencies vào Activity này
