@@ -32,7 +32,7 @@ import com.uzuu.jetpack_compose_hub.R
 import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn2_widgetAndModifier.first.Modifier
 
 @Composable
-fun noteScreen() {
+fun NoteScreen() {
 
 }
 
@@ -79,9 +79,9 @@ fun itemList(note: Note) {
         modifier = Modifier.padding(12.dp)
             .fillMaxWidth(),
     ) {
-        Checkbox(
-            checked = false,
-            )
+//        Checkbox(
+//            checked = false,
+//            )
         Surface(
             modifier = Modifier.padding(12.dp)
                 .background(MaterialTheme.colorScheme.background)
@@ -102,6 +102,7 @@ fun preItemList() {
         Note(
             0,
             "nguyen",
+            false
         )
     )
 }

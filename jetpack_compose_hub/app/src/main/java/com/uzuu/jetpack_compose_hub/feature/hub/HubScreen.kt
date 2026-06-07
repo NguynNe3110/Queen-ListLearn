@@ -1,15 +1,18 @@
 package com.uzuu.jetpack_compose_hub.feature.hub
 
 import android.content.Intent
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn2_widgetAndModifier.first.Modifier
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -36,16 +39,35 @@ fun HubScreen() {
                         context.startActivity(intent)
                     },
                     modifier = Modifier.fillMaxWidth(),
+                    colors = CardDefaults.cardColors(
+                        containerColor = (
+                                Color(0xFFE7FFF7)
+                        ),
+                    ),
                     elevation = CardDefaults.cardElevation(
                         defaultElevation = 4.dp,
                         pressedElevation = 6.dp
-                    )
+                    ),
+
                 ) {
                     Column(modifier = Modifier.padding(16.dp)) {
                         Text(lesson.title, style = MaterialTheme.typography.titleMedium)
                         Spacer(modifier = Modifier.height(4.dp))
                         Text(lesson.description, style = MaterialTheme.typography.bodySmall)
                     }
+                }
+            }
+
+            item {
+                Column(
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Spacer(modifier = Modifier.height(20.dp))
+                    Spacer(modifier = Modifier.height(2.dp).fillMaxWidth().background(Color.LightGray))
+                    Spacer(modifier = Modifier.height(20.dp))
+                    Spacer(modifier = Modifier.height(2.dp).fillMaxWidth().background(Color.LightGray))
+                    Spacer(modifier = Modifier.height(20.dp))
+
                 }
             }
         }
