@@ -8,6 +8,7 @@ import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn5_listAndPage.hub5.H
 import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn6_navigation.Learn6Activity
 import com.uzuu.jetpack_compose_hub.feature.ztest.feature.TryAnimation
 import com.uzuu.jetpack_compose_hub.feature.ztest.feature.bottom_navigationQ315.navigationQueen315
+import com.uzuu.jetpack_compose_hub.feature.ztest.manager.ztestAct
 import kotlin.jvm.java
 
 object LessonData {
@@ -47,5 +48,12 @@ object LessonData {
             "Thêm sau",
             TryAnimation::class.java
         ),
+
+        Lesson(
+            "Folder ztest",
+            "Thêm sau",
+            ztestAct::class.java
+        ),
+
     )
 }

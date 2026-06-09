@@ -38,12 +38,13 @@
         <activity android:name=".feature.listbaihoc.learn5_listAndPage.feature.VerticalGridScreen"/>
 
 
+        <activity android:name=".feature.ztest.manager.ztestAct"/>
         <activity android:name=".feature.ztest.feature.bottom_navigationQ315.navigationQueen315"/>
         <activity android:name=".feature.listbaihoc.learn6_navigation.Learn6Activity"/>
         <activity android:name=".feature.ztest.feature.navigationMVVM.NavigationMVVMActivity"/>
 
         <activity android:name=".feature.ztest.feature.TryAnimation"/>
-
+        <activity android:name=".feature.ztest.feature.dialog.DialogActivity"/>
 
         <activity android:name=".feature.listproject.todolist.NoteActivity"/>
     </application>

@@ -6,6 +6,7 @@ import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn5_listAndPage.featur
 import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn5_listAndPage.feature.lazy_columnQueen.ColumnActivityQ
 import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn5_listAndPage.feature.rowChat.RowCActivity
 import com.uzuu.jetpack_compose_hub.feature.listbaihoc.learn5_listAndPage.feature.rowQueen.RowQActivity
+import com.uzuu.jetpack_compose_hub.feature.ztest.feature.dialog.DialogActivity
 import com.uzuu.jetpack_compose_hub.feature.ztest.feature.navigationMVVM.NavigationMVVMActivity
 
 object LessonDataTest {
@@ -45,6 +46,12 @@ object LessonDataTest {
             "Bài NavigationMVVMActivity",
             "Thêm sau",
             NavigationMVVMActivity::class.java
+        ),
+
+        Lesson(
+            "Bài Dialog",
+            "Thêm sau",
+            DialogActivity::class.java
         ),
     )
 }
