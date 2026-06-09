@@ -16,6 +16,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -92,7 +93,15 @@ fun ColorGridItem(color: Color) {
     }
 }
 
-@Preview
+@Preview(showBackground = true)
+@Preview(
+    name = "Tablet - Landscape",
+    device = Devices.PIXEL_C
+)
+@Preview(
+    name = "Foldable",
+    device = Devices.FOLDABLE
+)
 @Composable
 fun Pre() {
     ResponsiveColorGrid()

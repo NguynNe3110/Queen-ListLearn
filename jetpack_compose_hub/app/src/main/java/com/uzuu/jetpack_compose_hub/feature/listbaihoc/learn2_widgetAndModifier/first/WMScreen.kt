@@ -57,6 +57,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.vectorResource
+import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.unit.Dp
 import coil.compose.AsyncImage
 import com.uzuu.jetpack_compose_hub.R
@@ -161,6 +162,18 @@ fun Lesson2Screen() {
 }
 
 @Preview(showBackground = true)
+@Preview(
+    name = "Phone - Portrait",
+    device = Devices.PIXEL_5
+)
+@Preview(
+    name = "Tablet - Landscape",
+    device = Devices.PIXEL_C
+)
+@Preview(
+    name = "Foldable",
+    device = Devices.FOLDABLE
+)
 @Composable
 fun PreviewScreen() {
     Lesson2Screen()
