@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gradient xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:angle="0"
+    android:type="linear"
+    android:startX="52.16"
+    android:startY="55.79"
+    android:endX="52.16"
+    android:endY="95.2">
+    <item
+        android:color="@color/achievementLockedGradientStart"
+        android:offset="0"/>
+    <item
+        android:color="@color/achievementLockedGradientEnd"
+        android:offset="1"/>
+</gradient>
